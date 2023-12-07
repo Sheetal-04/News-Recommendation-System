@@ -25,7 +25,7 @@ export default function Home() {
 						<div className="flex justify-center">
 							<Link
 								to="/news"
-								className="inline-flex text-white bg-indigo-500 border-0 py-4 px-6 focus:outline-none hover:bg-indigo-900 rounded text-lg"
+								className="inline-flex text-white bg-red-600 border-0 py-4 px-6 focus:outline-none hover:bg-indigo-900 rounded text-lg"
 							>
 								Explore News
 							</Link>
