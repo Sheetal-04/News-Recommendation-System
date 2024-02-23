@@ -9,4 +9,3 @@ export async function getNews(category){
     return data.articles;
 }
 
-// apiKey=9e8fa0d6b8554ed79d67b7d76a741bbc
