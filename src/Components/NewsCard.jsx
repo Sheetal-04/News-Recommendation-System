@@ -2,13 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function NewsCard(props) {
+	console.log(props);
 	return (
 		<React.Fragment>
 			<div className="card">
 				<img
 					src={
-						props.urlToImage
-							? props.urlToImage
+						props.image
+							? props.image
 							: "https://media.cnn.com/api/v1/images/stellar/prod/230830001909-idalia-satellite-12a.jpg?c=16x9&q=w_800,c_fill"
 					}
 					alt="Card"
@@ -17,7 +18,7 @@ export default function NewsCard(props) {
 					<h2 className="card-title">{props.title}</h2>
 					<p className="card-summary">{props.description}</p>
 					<div className="card-info">
-						<p className="card-author">Author: {props.author}</p>
+						<p className="card-author">Author: {props.source.name}</p>
 						<p className="card-published-at">
 							Published At: {props.publishedAt}
 						</p>
